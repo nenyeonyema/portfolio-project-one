@@ -38,6 +38,7 @@ body {
     position: relative;
     width: 100%;
 }
+/* Nav Bar  */
 .nav-bar {
     width: 100%;
     height: 90px; 
@@ -95,7 +96,12 @@ body {
     border: none;
     position: relative;
     cursor: pointer;
+    opacity: 1;
     z-index: 1;
+    transition: opacity 0.5s ;
+}
+.btn1:hover {
+    opacity: 0.8;
 }
 .btn1 i {
     color: rgba(21, 22, 22, 0.658);
@@ -113,9 +119,10 @@ body {
     z-index: 0;
 }
 .btn-hover:hover {
+    background-color: rgba(240, 236, 236, 0.5);
     height: 40px;
 }
-
+/* Side bars */
 .toggle-bar1 {
     display: flex;
     margin-left: 20px;
@@ -152,6 +159,7 @@ body {
     height: 810px;
     width: 0px;
     background-color: black;
+    overflow-y: auto;
     color: white;
     right: 0;
     top: 0;
@@ -306,6 +314,7 @@ div.paras div h3 {
     font-family: sans-serif;
     padding: 20px;
 }
+/* Home Section */
 .con1-inner {
     display: flex;
     width: 100%;
@@ -629,7 +638,7 @@ p .span-2::before {
 .my-about div.same2 {
     width: 100px;
 }
-#about-me {
+#active-link {
     background-color: #C9F31D;
     color: black;
 }
@@ -658,6 +667,9 @@ div.details1 {
     width: 100%;
     min-height: 65%;
     padding: 20px 0px;
+}
+.details1-about {
+    display: block;
 }
 div.personal-info {
     padding: 10px;
@@ -715,7 +727,148 @@ div.personal-content div p a  {
 div.personal-content div p a i {
     color: white;
 }
+div.details1-experience {
+    display: none;
+}
+div.details1-education {
+    display: none;
+}
+div.personal-experience {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.personal-experience div {
+    height: 150px;
+    width: 95%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* justify-content: stretch; */
+}
+div.one, div.two {
+    border-top: 1px solid #353434b0;
+    transition: border-top 0.5s;
+}
+.three {
+    border-top: 1px solid #353434b0;
+    border-bottom: 1px solid #353434b0;
+    transition: border-top 0.5s border-bottom 0.5s;
+}
+.three:hover, div.one:hover, div.two:hover {
+    border-color: #C9F31D;
+}
+.span-item1 {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #C9F31D;
+}
+div.identity p {
+    line-height: 2.0;
+}
+.personal-experience div div.identity {
+    position: absolute;
+    right: -240px;
+}
+.span-item2 {
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+.span-item3 {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #959999;
+}
+div.details1-skills {
+    display: none;
+}
+div.personal-skills {
+    display: flex;
+    flex-direction: column;
+}
+div.personal-skills div {
+    width: 95%;
+    height: 150px;
+    background-color: #1D1D1D;
+    border-radius: 15px;
+    margin: 0 10px;
+    margin-top: 20px;
+    padding: 25px;
+    border: none;
+    cursor: pointer;
+    transition: border 0.5s;
+}
+div.personal-skills div:hover {
+    border: 1px solid #C9F31D;
+}
+div.skillz {
+    display: flex;
+}
+div.skillz span img {
+    transform: scale(0.9);
+}
+div.skillz p {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+div.skillz p >:first-child {
+    color: #959999;
+    font-size: 16px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+div.skillz p >:last-child {
+    color: rgb(255, 255, 255);
+    font-size: 36px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.active-link {
+    background-color: #C9F31D;
+}
+div.awards {
+    height: 650px;
+    width: 100%;
+    background-image: url('./images/about-img/about-bg.png');
+    padding: 70px 30px;
+}
+div.awards div.inner-awards {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border-bottom: 1px solid #4d4c4c;
+}
+div.awards div div span.our-award {
+    text-transform: capitalize;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: left;
+}
 
+div.awards div.inner-awards div span.our-work {
+    text-transform: capitalize;
+    color: #C9F31D;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+div.awards div div span {
+    text-transform: capitalize;
+    color: rgb(255, 255, 255);
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+span.middle {
+    margin-left: -60px;
+}
 @media only screen and (min-width: 768px) {
     .nav-bar {
         padding: 1.6% 0.01%;
@@ -1078,7 +1231,6 @@ div.personal-content div p a i {
         width: 58%;
         height: 100%;
         padding: 30px;
-        border: 1px solid white;
     }
     
     #sitting-man1 {
@@ -1123,6 +1275,48 @@ div.personal-content div p a i {
     }
     div.af {
         margin-top: 20px;
+    }
+    .personal-experience div {
+        height: 100px;
+    }
+    .personal-experience div div.identity {
+        position: absolute;
+        right: -350px;
+    }
+    div.identity p {
+        line-height: 1.7;
+    }
+    .span-item2 {
+        font-family: sans-serif;
+        font-size: 22px;
+        color: rgb(255, 255, 255);
+    }
+    .span-item3 {
+        font-family: sans-serif;
+        font-size: 16px;
+        color: #959999;
+    }
+    div.personal-skills {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding-left: 25px;
+        padding-top: 25px;
+    }
+    div.personal-skills div {
+        width: 280px;
+        height: 150px;
+        background-color: #1D1D1D;
+        border-radius: 15px;
+    }
+    div.awards div div span.our-award {
+        font-size: 36px;
+    }
+    div.awards div.inner-awards div span.our-work {
+        font-size: 18px;
+    }
+    div.awards div div span {
+        font-size: 18px;
     }
 }
 

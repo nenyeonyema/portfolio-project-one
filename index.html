@@ -199,19 +199,20 @@
             </p>
         </div>
         <div  class="my-about">
-            <div id="about-me" class="same1">ABOUT</div>
-            <div id="my-experience" class="same2">EXPERIENCE</div>
-            <div id="my-education" class="same2">EDUCATION</div>
-            <div id="my-skill same1">SKILL</div>
+            <div id="active-link" class="same1 tab-links">ABOUT</div>
+            <div id="my-experience" class="same2 tab-links">EXPERIENCE</div>
+            <div id="my-education"class="same2 tab-links">EDUCATION</div>
+            <div id="my-skills" class="same1 tab-links">SKILL</div>
         </div>
     </section>
     <section class="about-details">
-        <div class="about-details-inner">
-            <div class="sitting-man1">
+        <div class="about-details-inner" data-aos="fade-up">
+            <div class="sitting-man1" data-aos="zoom-in">
                 <img src="./styles/images/about-img/personal-infothumb.png" alt="man-sitting" id="sitting-man1">
             </div>
-            <div class="details1">
-                <div class="details1-about" id="about-content">
+            <!-- Note The class all-info is the div carrying all the details of about, experience, education and skills -->
+            <div class="details1 all-infos">
+                <div class="details1-about tab-contents active-content" id="about-content">
                     <div class="personal-info" data-aos="fade-up">
                         <p class="p-info1">Personal Info</p>
                         <p class="p-info2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
@@ -240,8 +241,135 @@
                         </div>
                     </div>
                 </div>
-                
-                
+                <!-- Experience content -->
+                <div class="details1-experience tab-contents" id="experience-content">
+                    <div class="personal-info experience-info" data-aos="fade-up">
+                        <p class="p-info1" data-aos="fade-up">Experience</p>
+                        <p class="p-info2" data-aos="fade-up">Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+                    </div>
+                    <div class="personal-experience" data-aos="zoom-in-up">
+                        <div class="one">
+                            <div>
+                                <span class="span-item1">In 2011</span>
+                            </div>
+                            <div class="identity">
+                                <p>
+                                    <span class="span-item2">Software Engineer</span><br>
+                                    <span class="span-item3"> UI Head & Manager</span>
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="two">
+                            <div>
+                                <span class="span-item1">In 2016</span>
+                            </div>
+                            <div class="identity">
+                                <p>
+                                    <span class="span-item2">Product Designer</span><br>
+                                    <span class="span-item3">Head Of Department</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <div>
+                                <span class="span-item1">In 2023</span>
+                            </div>
+                            <div class="identity">
+                                <p>
+                                    <span class="span-item2">Senior UI Designer</span><br>
+                                    <span class="span-item3">Fiverr.com</span>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Education content -->
+                <div class="details1-education tab-contents" id="education-content">
+                    <div class="personal-info experience-info" data-aos="fade-up">
+                        <p class="p-info1" >Education</p>
+                        <p class="p-info2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+                    </div>
+                    <div class="personal-experience" data-aos="zoom-in">
+                        <div class="one">
+                            <div>
+                                <span class="span-item1">2011 - 2013</span>
+                            </div>
+                            <div class="identity">
+                                <p>
+                                    <span class="span-item2">Programming Course</span><br>
+                                    <span class="span-item3">New York University</span>
+                                </p>
+                            </div>
+                            
+                        </div>
+                        <div class="two">
+                            <div>
+                                <span class="span-item1">2013 - 2016</span>
+                            </div>
+                            <div class="identity">
+                                <p>
+                                    <span class="span-item2">University Of Design</span><br>
+                                    <span class="span-item3">Kingston, United States</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="three">
+                            <div>
+                                <span class="span-item1">2016 - 2018</span>
+                            </div>
+                            <div class="identity">
+                                <p>
+                                    <span class="span-item2">Web Design Course</span><br>
+                                    <span class="span-item3">New York University</span>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Skills content -->
+                <div class="details1-skills tab-contents" id="skills-content">
+                    <div class="personal-info" data-aos="fade-up">
+                        <p class="p-info1">My Skills</p>
+                        <p class="p-info2">Neque porro quisquam est, qui dolorem ipsum quia dolor sit consectetur, aliquam quaerats voluptatem. Ut enim ad minima veniam, exercitationem laboriosam, nisi ut aliquid ex ea autem velit esse quam nihil</p>
+                    </div>
+                    <div class="personal-skills" data-aos="zoom-in">
+                        <div class="skillz">
+                            <span>
+                                <img src="./styles/images/about-img/html.png" alt="html">
+                            </span>
+                            <p>
+                                <span>HTML</span><br>
+                                <span>85%</span>
+                            </p>
+                        </div>
+                        <div class="skillz">
+                            <span>
+                                <img src="./styles/images/about-img/figma.png" alt="figma">
+                            </span>
+                            <p>
+                                <span>Figma</span><br>
+                                <span>90%</span></p>
+                        </div>
+                        <div class="skillz">
+                            <img src="./styles/images/about-img/word.png" alt="wordpress">
+                            <p>
+                                <span>Wordpress</span><br>
+                                <span>95%</span></p>
+                        </div>
+                        <div class="skillz">
+                            <span>
+                                <img src="./styles/images/about-img/boot.png" alt="bootstrap">
+                            </span>
+                            <p>
+                                <span>Bootstrap</span><br>
+                                <span>97%</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -256,9 +384,127 @@
             <img src="./styles/images/moving-img/ts7.png" alt="biz-icon">
             <img src="./styles/images/moving-img/ts8.png" alt="biz-icon">
         </div>
-
     </div>
+    <div class="awards" data-aos="fade-up">
+        <div class="inner-awards">
+            <div>
+                <span class="our-award">Our Awards</span>
+            </div>
+            <div>
+                <span class="our-work">View my work <i class="fa fa-long-arrow-right" aria-hidden="true"></i></span>
+            </div>
+        </div>
+        <div class="inner-awards">
+            <div><span>Site of the Day</span></div>
+            <div><span>CSS & Animation</span></div>
+            <div><span>2018</span></div>   
+        </div>
+        <div class="inner-awards">
+            <div><span>Best business model</span></div>
+            <div><span class="middle">New strategy</span></div>   
+            <div><span>2019</span></div>    
+        </div>
+        <div class="inner-awards">
+            <div><span>Motion Graphics</span></div>
+            <div><span >3D & Visual Effect</span></div>  
+            <div><span>2020</span></div> 
+        </div>
+        <div class="inner-awards">
+            <div><span>Video Design</span></div>
+            <div><span>CSS & Animation</span></div>
+            <div><span>2020</span></div>   
+        </div>
+    </div>
+    <!-- Work Section -->
+    <section id="work" class="my-work">
+        <div class="detail-work">
+            <div class="line-details">
+                <div></div>
+                <div>Complete Project</div>
+                <div></div>
+            </div>
+            <div class="work-decription">
+                Look At My Portfolio And Give Me <br> Your Feedback
+            </div>
+        </div>
+        <!-- The images -->
+        <div class="work-contents">
+            <!-- The left  work images and it content -->
+            <div class="left-work">
+                <div class="work-images">
+                    <img src="./styles/images/pro-img/pro1.png" alt="pro1">
+                    <div>
+                        <p>PRODUCT DESIGN <br>
+                            <span>Brand Identity & Motion Design</span>
+                        </p>
+                        <div>
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-images">
+                    <img src="./styles/images/pro-img/pro3.png" alt="pro1">
+                    <div>
+                        <p>UI/UX DESIGN <br>
+                            <span>Mobile Application Development</span>
+                        </p>
+                        <div>
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-images">
+                    <img src="./styles/images/pro-img/pro5.png" alt="pro1">
+                    <div>
+                        <p>PRODUCT DESIGN<br>
+                            <span>Design & Branding Mokeup</span>
+                        </p>
+                        <div>
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+            <!-- The right  work images and it content -->
+            <div class="right-work">
+                <div class="work-images">
+                    <img src="./styles/images/pro-img/pro2.png" alt="pro1">
+                    <div>
+                        <p>UI/UX DESIGN<br>
+                            <span>Mobile Application Development</span>
+                        </p>
+                        <div>
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-images">
+                    <img src="./styles/images/pro-img/pro4.png" alt="pro1">
+                    <div>
+                        <p>UI/UX DESIGN<br>
+                            <span>Mobile Application Development</span>
+                        </p>
+                        <div>
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="work-images">
+                    <img src="./styles/images/pro-img/pro6.png" alt="pro1">
+                    <div>
+                        <p>UI/UX DESIGN<br>
+                            <span>Mobile Application Development</span>
+                        </p>
+                        <div>
+                            <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
     <script type="text/Javascript" src="./index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

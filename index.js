@@ -6,9 +6,17 @@ window.addEventListener('DOMContentLoaded', () => {
     const generalSideNav = document.querySelector('.general-sidebar');
 
     mobileBar.addEventListener('click', () => {
+        let viewportWidth = window.innerWidth;
+        if (viewportWidth > 768) {
+            mobileBlockBar.style.display = "none";
+            mobileClose.style.display ="none";
+        }
         mobileBar.style.display ="none";
         mobileClose.style.display ="inline-block";
         mobileBlockBar.style.display = "block";
+        if (viewportWidth > 768) {
+            mobileBlockBar.style.display = "none";
+        }
     });
     mobileClose.addEventListener('click', () => {
         mobileBar.style.display ="inline-block";
@@ -17,7 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     });
 
     generalBar.addEventListener('click', () => {
-        const viewportWidth = window.innerWidth;
+        let viewportWidth = window.innerWidth;
         generalSideNav.style.display = "block";
 
         if (viewportWidth < 768) {
@@ -36,6 +44,31 @@ window.addEventListener('DOMContentLoaded', () => {
             generalSideNav.style.width = '0';
         })      
     });
+
+    const tabLinks = document.getElementsByClassName('tab-links');
+    const tabContents = document.getElementsByClassName('tab-contents');
+    const activeLink = document.getElementById('active-link');
+
+    for (let tablink of tabLinks) {
+        tablink.addEventListener('click', (event) => {
+            for (let tab of tabLinks) {
+                tab.removeAttribute('id');
+            }
+            event.currentTarget.setAttribute('id', 'active-link');
+            const index = Array.from(tabLinks).indexOf(event.currentTarget);
+            for (let i = 0; tabContents.length; i++) {
+                if (i === index) {
+                    tabContents[i].style.display = "block";
+                }
+                else {
+                    tabContents[i].style.display = "none";
+                    
+                }
+            }
+        });
+        
+    }
+
 });
 
 
