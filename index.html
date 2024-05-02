@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins|Kanit|Caveat' rel='stylesheet'>
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>My Portfolio</title>
@@ -108,6 +108,7 @@
 
         </div>         
     </section>
+    <!-- Mobile navigation sidebar -->
     <div class="mobile-blockbar" id="mobile-blockbar">
         <ul class="mobile-list">
             <li><a href="#">HOME</a></li>
@@ -133,6 +134,7 @@
             <li><a href="#">CONTACT</a></li>
         </ul>
     </div>
+    <!-- General sidebar for mobile and desktop -->
     <div class="general-sidebar">
         <div class="closing-bar">
             <a href="#"><i class="fa-solid fa-x"></i></a>
@@ -177,6 +179,7 @@
             </div>
         </div>
     </div>
+    <!-- Moving icons 1 -->
     <div class="moving-icons1">
         <div class="icons">
             <img src="./styles/images/moving-img/ts1.png" alt="biz-icon">
@@ -189,8 +192,9 @@
             <img src="./styles/images/moving-img/ts4.png" alt="biz-icon">
         </div>
     </div>
+    <!-- About Section -->
     <section class="my-name" id="about">
-        <div data-aos="fade-in" class="star-img">
+        <div data-aos="fade-down" class="star-img">
             <img src="./styles/images/about-img/section-star.png" alt="star">
         </div>
         <div data-aos="fade-up" class="name-para">
@@ -373,6 +377,7 @@
             </div>
         </div>
     </section>
+    <!-- Moving icons2 -->
     <div class="moving-icons2">
         <div class="icons2">
             <img src="./styles/images/moving-img/ts5.png" alt="biz-icon">
@@ -415,50 +420,58 @@
             <div><span>2020</span></div>   
         </div>
     </div>
+
+
     <!-- Work Section -->
     <section id="work" class="my-work">
         <div class="detail-work">
-            <div class="line-details">
-                <div></div>
-                <div>Complete Project</div>
-                <div></div>
+            <div class="line-details" data-aos="fade-down">
+                <div class="inner-line"></div>
+                <div class="inner-name"><span>Complete Project</span></div>
+                <div class="inner-line"></div>
             </div>
-            <div class="work-decription">
-                Look At My Portfolio And Give Me <br> Your Feedback
+            <div class="work-decription" data-aos="fade-up">
+                <p>Look At My Portfolio And Give Me <br> Your Feedback</p>
             </div>
         </div>
         <!-- The images -->
         <div class="work-contents">
             <!-- The left  work images and it content -->
             <div class="left-work">
-                <div class="work-images">
-                    <img src="./styles/images/pro-img/pro1.png" alt="pro1">
-                    <div>
-                        <p>PRODUCT DESIGN <br>
+                <!-- image one and its content -->
+                <div class="work-images" data-aos="fade-up">
+                    <div class="forimg"><img src="./styles/images/pro-img/pro1.png" alt="pro1"></div>
+                    <div class="forpara">
+                        <div class="forpara1">
+                            <span class="">PRODUCT DESIGN</span><br>
                             <span>Brand Identity & Motion Design</span>
-                        </p>
+                        </div>
                         <div>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
-                <div class="work-images">
-                    <img src="./styles/images/pro-img/pro3.png" alt="pro1">
-                    <div>
-                        <p>UI/UX DESIGN <br>
+                 <!-- image three and its content -->
+                <div class="work-images" data-aos="fade-up">
+                    <div class="forimg"><img src="./styles/images/pro-img/pro3.png" alt="pro1"></div>
+                    <div class="forpara">
+                        <div class="forpara1">
+                            <span>UI/UX DESIGN</span> <br>
                             <span>Mobile Application Development</span>
-                        </p>
+                        </div>
                         <div>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
-                <div class="work-images">
-                    <img src="./styles/images/pro-img/pro5.png" alt="pro1">
-                    <div>
-                        <p>PRODUCT DESIGN<br>
+                 <!-- image five and its content -->
+                <div class="work-images" data-aos="fade-up">
+                    <div class="forimg"><img src="./styles/images/pro-img/pro5.png" alt="pro1"></div>
+                    <div class="forpara">
+                        <div class="forpara1">
+                            <span>PRODUCT DESIGN</span><br>
                             <span>Design & Branding Mokeup</span>
-                        </p>
+                        </div>
                         <div>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </div>
@@ -467,35 +480,41 @@
 
             </div>
             <!-- The right  work images and it content -->
-            <div class="right-work">
+            <div class="right-work" data-aos="fade-up">
+                 <!-- image two and its content -->
                 <div class="work-images">
-                    <img src="./styles/images/pro-img/pro2.png" alt="pro1">
-                    <div>
-                        <p>UI/UX DESIGN<br>
+                    <div class="forimg"><img src="./styles/images/pro-img/pro2.png" alt="pro1"></div>
+                    <div class="forpara">
+                        <div class="forpara1">
+                            <span>UI/UX DESIGN</span><br>
                             <span>Mobile Application Development</span>
-                        </p>
+                        </div>
                         <div>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
-                <div class="work-images">
-                    <img src="./styles/images/pro-img/pro4.png" alt="pro1">
-                    <div>
-                        <p>UI/UX DESIGN<br>
+                 <!-- image four and its content -->
+                <div class="work-images" data-aos="fade-up">
+                    <div class="forimg"><img src="./styles/images/pro-img/pro4.png" alt="pro1"></div>
+                    <div class="forpara">
+                        <div class="forpara1">
+                            <span>UI/UX DESIGN</span><br>
                             <span>Mobile Application Development</span>
-                        </p>
+                        </div>
                         <div>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </div>
                     </div>
                 </div>
-                <div class="work-images">
-                    <img src="./styles/images/pro-img/pro6.png" alt="pro1">
-                    <div>
-                        <p>UI/UX DESIGN<br>
+                 <!-- image six and its content -->
+                <div class="work-images" data-aos="fade-up">
+                    <div class="forimg"><img src="./styles/images/pro-img/pro6.png" alt="pro1"></div>
+                    <div class="forpara">
+                        <div class="forpara1">
+                            <span>UI/UX DESIGN</span><br>
                             <span>Mobile Application Development</span>
-                        </p>
+                        </div>
                         <div>
                             <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
                         </div>
@@ -505,6 +524,7 @@
             </div>
         </div>
     </section>
+    <!-- Services -->
     <script type="text/Javascript" src="./index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

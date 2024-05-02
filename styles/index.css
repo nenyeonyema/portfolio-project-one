@@ -229,7 +229,7 @@ div.paras div h3 {
     letter-spacing: 1.0;
     font-size: 12px;
     text-align: justify;
-    font-family: Poppins;
+    font-family: "Kanit", "sans-serif";
     color: #959999;
     font-weight: 500;
 }
@@ -869,6 +869,119 @@ div.awards div div span {
 span.middle {
     margin-left: -60px;
 }
+/* Work Section */
+section.my-work {
+    background-color: #141410;
+    min-height: 1000px;
+    width: 100%;
+    padding-top: 100px;
+}
+div.detail-work {
+    display: block;
+    height: 200px;
+    width: 100%;
+}
+div.line-details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div.line-details div.inner-line {
+    height: 0.5px;
+    width: 70px;
+    background-color: #C9F31D;
+    margin: 0 20px;
+}
+div.line-details div.inner-name span {
+    font-size: 28px;
+    font-family: 'Caveat', 'cursive';
+    color: #C9F31D;
+}
+div.work-decription {
+    display: block;
+    margin-top: 30px;
+}
+div.work-decription p {
+    text-align: center;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 28px;
+}
+div.work-contents {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px;
+    margin-top: 50px;
+}
+div.left-work {
+    width: 100%;
+    min-height: 900px;
+}
+div.right-work {
+    width: 100%;
+    min-height: 900px;
+}
+div.work-images {
+    min-height: 400px;
+    cursor: pointer;
+    transition:  background-color 0.5s color 0.5s;
+}
+div.work-images:hover div.forpara  >:last-child {
+    background-color: #C9F31D;
+}div.work-images:hover div.forpara  >:last-child i {
+    color: black;
+}
+div.work-images div.forimg {
+    margin: auto;
+    width: 100%;
+    min-height: 90%;
+}
+
+div.work-images div.forimg img {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+div.work-images div.forimg img:hover {
+    transform: scale(1.01);
+}
+div.forpara {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    height: 100px;
+}
+div.forpara1 {
+    display: block;
+    line-height: 1.5;
+}
+div.forpara1  >:first-child {
+    font-family: sans-serif;
+    color: #C9F31D;
+    
+}
+div.forpara1  >:last-child {
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-top: 10px;
+}
+div.forpara  >:last-child  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 35px;
+    border-radius: 5px;
+    background-color: #1D1D1D;
+}
+div.forpara  >:last-child i {
+    font-size: 18px;
+    transform: rotate(-45deg);
+    color: white;
+}
 @media only screen and (min-width: 768px) {
     .nav-bar {
         padding: 1.6% 0.01%;
@@ -1317,6 +1430,54 @@ span.middle {
     }
     div.awards div div span {
         font-size: 18px;
+    }
+
+    /* Wordks Section */
+
+    div.line-details div.inner-name span {
+        font-size: 30px;
+    }
+    div.work-decription p {
+        font-size: 54px;
+    }
+    div.work-contents {
+        display: flex;
+        flex-direction: row;
+    }
+    div.left-work {
+        width: 48%;
+        margin-right: 25px;
+        margin-left: 15px;
+    }
+    div.right-work {
+        width: 48%;
+    }
+    div.work-images {
+        min-height: 400px;
+        width: 100%;
+    }
+    div.work-images div.forimg {
+        margin: auto;
+        width: 96%;
+        min-height: 90%;
+    }
+    div.work-images div.forimg img {
+        width: 100%;
+        cursor: pointer;
+        transition: transform 0.5s border-radius 0.5s;
+    }
+    div.work-images div.forimg img:hover {
+        transform: scale(1.015);
+        border-radius: 0px;
+    }
+    div.forpara  >:last-child  {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        width: 50px;
+        border-radius: 5px;
+        background-color: #1D1D1D;
     }
 }
 
