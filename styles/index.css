@@ -959,7 +959,6 @@ div.forpara1 {
 div.forpara1  >:first-child {
     font-family: sans-serif;
     color: #C9F31D;
-    
 }
 div.forpara1  >:last-child {
     font-family: sans-serif;
@@ -981,6 +980,144 @@ div.forpara  >:last-child i {
     font-size: 18px;
     transform: rotate(-45deg);
     color: white;
+}
+/* Big Circle div */
+div.big-circle {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+div.big-circle .b1-circle {
+    width: 130px;
+    height: 130px;
+    position: relative;
+    border-radius: 100%;
+    bottom: 5px;
+    border: 1px solid #C9F31D;
+    z-index: 1;
+    transition: transform 0.5s;
+}
+.b1-circle:hover {
+    transform: translateY(-10px);
+}
+div.big-circle .b2-circle {
+    width: 130px;
+    height: 130px;
+    position: absolute;
+    border-radius: 100%;
+    bottom: 5px;
+    left: 7px;
+    background-color: #C9F31D;
+    z-index: 2;
+}
+div.b2-circle div {
+    display: grid;
+    position: relative;
+    place-content: center;
+    text-align: center;
+    margin-top: 40px;
+}
+div.b2-circle div i, div.b2-circle div span {
+    font-size: 14px;
+    color: #1D1D1D;
+}
+div.b2-circle div span {
+    font-family: sans-serif;
+}
+/* Email - Location div */
+div.email-location {
+    display: flex;
+    flex-direction: column;
+    background-image: url('./images/about-img/about-bg.png');
+    min-height: 600px;
+    width: 100%;
+    padding: 50px 10px;
+}
+div.email-left {
+    width: 100%;
+    height: 60%;
+}
+div.email-right {
+    width: 100%;
+    height: 38%;
+    margin-top: 50px;
+}
+div.email-right img {
+    width: 450px;
+    height: 500px;
+}
+div.email-one {
+    display: block;
+    height: 150px;
+    width: 100%;
+    border-bottom: 1px solid #4d4c4c;
+}
+div.line-details1 {
+    display: flex;
+    align-items: center;
+}
+div.line-details1 div.inner-line {
+    height: 0.5px;
+    width: 70px;
+    background-color: #C9F31D;
+    /* margin: 0 20px; */
+}
+div.line-details1 div.inner-name span {
+    font-size: 28px;
+    font-family: 'Caveat', 'cursive';
+    color: #C9F31D;
+}
+div.work-decription1 {
+    display: block;
+    margin-top: 30px;
+}
+div.work-decription1 p br{
+    display: none;
+}
+div.work-decription1 p {
+    text-align: left;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-size: 28px;
+}
+div.email-two, div.email-three {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #4d4c4c;
+    cursor: pointer;
+    transition: border-bottom 0.5s ease-in-out;
+}
+div.email-two:hover, div.email-three:hover {
+    border-bottom: 1px solid #C9F31D;
+}
+div.email-two div.email-icon, div.email-three div.location-icon{
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    background-color: #C9F31D;
+    margin-right: 30px;
+}
+div.email-icon i, div.location-icon i {
+    font-size: 16px;
+}
+div span.span-item8, div span.span-item11 {
+    font-family: sans-serif;
+    color: #706e6e;
+    font-size: 15px;
+    font-weight: 600;
+}
+div span.span-item9, div span.span-item12 {
+    font-family: sans-serif;
+    font-size: 16px;
+    color: #ffffff;
 }
 @media only screen and (min-width: 768px) {
     .nav-bar {
@@ -1478,6 +1615,101 @@ div.forpara  >:last-child i {
         width: 50px;
         border-radius: 5px;
         background-color: #1D1D1D;
+    }
+    /* Big Circle div */
+    div.big-circle {
+        width: 100%;
+        height: 400px;
+        margin-top: 0;
+    }
+    div.big-circle .b1-circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 100%;
+        border: 1px solid #C9F31D;
+    }
+    div.big-circle .b2-circle {
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        border-radius: 100%;
+        bottom: 5px;
+        left: 7px;
+        background-color: #C9F31D;
+        z-index: 2;
+    }
+    div.b2-circle div {
+        display: grid;
+        position: relative;
+        place-content: center;
+        text-align: center;
+        margin-top: 70px;
+    }
+    div.b2-circle div i, div.b2-circle div span {
+        font-size: 16px;
+        color: #1D1D1D;
+    }
+    /* Email and Location div starts on html file line 538 */
+    div.email-location {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    div.email-left {
+        width: 60%;
+        height: 100%;
+        margin-top: 30px;
+    }
+    div.email-right {
+        width: 38%;
+        height: 100%;
+        margin-top: 20px;
+        margin-left: 30px;
+    }
+    div.email-one {
+        height: 235px;
+    }
+    div.line-details1 div.inner-name span {
+        font-size: 28px;
+        font-family: 'Caveat', 'cursive';
+        color: #C9F31D;
+    }
+    div.work-decription1 {
+        display: block;
+        margin-top: 30px;
+    }
+    div.work-decription1 p br{
+        display: inline;
+    }
+    div.work-decription1 p {
+        text-align: left;
+        color: #ffffff;
+        font-family: sans-serif;
+        font-size: 45px;
+    }
+    div.email-right img {
+        width: 450px;
+        height: 550px;
+    }
+    div.email-two, div.email-three {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 130px;
+    }
+    div.email-icon i, div.location-icon i {
+        font-size: 18px;
+    }
+    div span.span-item8, div span.span-item11 {
+        font-family: sans-serif;
+        color: #706e6e;
+        font-size: 15px;
+        font-weight: 600;
+    }
+    div span.span-item9, div span.span-item12 {
+        font-family: sans-serif;
+        font-size: 16px;
+        color: #ffffff;
     }
 }
 
