@@ -1,2 +1,2 @@
 FROM httpd:latest
-ADD . /var/www/html/DevOPsCICD
+ADD . /usr/local/apache2/htdocs/DevOPsCICD
