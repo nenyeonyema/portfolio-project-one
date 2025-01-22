@@ -1,2 +1,2 @@
 FROM httpd:latest
-ADD ./portfolio-project-one /var/www/html/portfolio-project-one
+ADD ./home/ubuntu/jenkins/workspace/Test /var/www/html/Test
